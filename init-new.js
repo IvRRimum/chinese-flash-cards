@@ -1,27 +1,5 @@
 require('dotenv').config()
 
-//const projectId = process.env.GOOGLE_APPLICATION_PROJECT_ID;
-//const {Translate} = require('@google-cloud/translate').v2;
-//
-//// Instantiates a client
-//const translate = new Translate({projectId});
-//
-//async function translateToChinese() {
-//  // The text to translate
-//  const text = 'Hello, world!';
-//
-//  // The target language
-//  const target = 'zh';
-//
-//  // Translates some text into Russian
-//  const [translation] = await translate.translate(text, target);
-//  console.log(`Text: ${text}`);
-//  console.log(`Translation: ${translation}`);
-//}
-//
-//translateToChinese()
-
-const util = require('util')
 var fs = require('fs');
 const tokenize = require('chinese-tokenizer').loadFile(process.env.CEDICT_PATH)
 
@@ -66,5 +44,3 @@ for (var i = 0; i < chinese_characters.length; i++) {
 }
 
 console.log(chinese_characters_translated)
-
-// console.log(util.inspect(chinese_characters_translated, {showHidden: false, depth: null, colors: true}))
