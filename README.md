@@ -16,7 +16,7 @@ npm install
 
 Create new file `.env` and fill it in(example in `example.env`)
 
-Dump your chinese characters in `init-new-dump.txt` and run:
+Dump your chinese characters in `init-new-dump.txt`(each line(\n) will be translated as a seperate object) and run:
 ```bash
 node init-new.js
 ```
