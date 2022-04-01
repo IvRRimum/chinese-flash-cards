@@ -1,4 +1,7 @@
 # Chinese flash card builder
+![Preview](/img/preview-1.png)
+![Preview](/img/preview-2.png)
+
 Just dump your chinese text in `init-new-dump.txt` and get translation in english and pinyin. Then take the output and fill it in in flash-cards-template.js. Boom you have command line flash cards for learning chinese. No more spending so mutch time to copy pinyin from google translate.
 
 ```bash
