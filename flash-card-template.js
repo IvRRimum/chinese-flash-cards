@@ -1,3 +1,5 @@
+var core = require("./core.js");
+
 const words = [
   "last (week)", 
   "next week",
@@ -5,9 +7,9 @@ const words = [
 ];
 
 const chinese = {
-  "last (week)": "上个 Shàng gè",
-  "next week": "下个星期 Xià gè xīngqí",
-  "train station": "火车站 Huǒchē zhàn",
+  "last (week)": ["上个", "Shàng gè"],
+  "next week": ["下个星期", "Xià gè xīngqí"],
+  "train station": ["火车站", "Huǒchē zhàn"],
 }
 
 const random = Math.floor(Math.random() * words.length);
@@ -20,7 +22,4 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('What is this word in Chinese? ', function (name) {
-  console.log(`Correct: `, chinese[color]);
-  rl.close();
-});
+core.perform_flashcards_loop('some_table_name_2022', words, chinese);

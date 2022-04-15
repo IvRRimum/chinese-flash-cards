@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Chinese flash cards",
   "main": "init-new.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "IvRRimum",
   "license": "ISC",
   "dependencies": {
     "chinese-tokenizer": "^2.4.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "sqlite3": "^5.0.3"
   }
 }
