@@ -37,7 +37,7 @@ for (var i = 0; i < chinese_characters.length; i++) {
       keyStr += match["english"];
       pinyinStr += match["pinyinPretty"];
     });
-    obj[keyStr] = translation["text"] + " " + pinyinStr;
+    obj[keyStr] = [translation["text"], pinyinStr];
 
     chinese_characters_translated.push(obj);
   });
